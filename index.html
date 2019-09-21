@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>File Upload</title>
+  <style>
+    .container {
+      margin: 30vh auto;
+      width: min-content;
+      height: 40vh;
+    }
+    .container input {
+      margin: 5px;
+      padding: 10px;
+      width: 20vw;
+      height: 10vh;
+      border: 2px solid gray;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+      <label for="file">Files:</label>
+      <input type="file" name="data" multiple />
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+</html>
